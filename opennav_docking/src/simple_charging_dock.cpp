@@ -193,7 +193,7 @@ bool SimpleChargingDock::getRefinedPose(geometry_msgs::msg::PoseStamped & pose)
     try {
       if (!tf2_buffer_->canTransform(
           pose.header.frame_id, detected.header.frame_id,
-          detected.header.stamp, rclcpp::Duration::from_seconds(0.2)))
+          detected.header.stamp, rclcpp::Duration::from_seconds(1.0)))
       {
         RCLCPP_WARN(node_->get_logger(), "Failed to transform detected dock pose");
         return false;

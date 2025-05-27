@@ -30,7 +30,7 @@ uint16 num_retries 0  # Number of retries attempted
 ---
 #feedback definition
 
-uint16 NONE=0
+# uint16 NONE=0
 uint16 NAV_TO_STAGING_POSE=1
 uint16 INITIAL_PERCEPTION=2
 uint16 CONTROLLING=3
